@@ -37,6 +37,11 @@ p {
   --bs-btn-disabled-border-color: #1acb98;
 }
 
+.hero-icon-wrapper {
+  background: #ffeeda;
+  color: #ca8b44;
+}
+
 .icon {
   display: flex;
   justify-content: center;
