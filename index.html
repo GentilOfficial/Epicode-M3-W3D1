@@ -80,15 +80,88 @@
         </nav>
         <div class="d-flex gap-2 align-items-center justify-content-right">
           <button class="btn btn-light bg-tertiary border rounded-circle p-1">
-            <span class="icon">
+            <span class="icon position-relative">
               <i data-lucide="bell" class="text-secondary p-1"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle border border-2 border-white rounded-circle bg-primary p-1"
+              ></span>
             </span>
           </button>
-          <img
-            class="rounded-circle img-fluid nav-avatar"
-            src="./assets/images/avatar-1.jpg"
-            alt="Avatar"
-          />
+          <div class="dropdown">
+            <button
+              class="btn rounded-circle p-0"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="icon position-relative">
+                <img
+                  class="img-fluid nav-avatar rounded-circle"
+                  src="./assets/images/avatar-1.jpg"
+                  alt="Avatar"
+                />
+                <span
+                  class="position-absolute top-90 start-90 translate-middle border border-2 border-white rounded-circle bg-success p-1"
+                ></span>
+              </span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end fs-6">
+              <li>
+                <div
+                  class="d-flex gap-2 align-items-center justify-content-left ps-2 pe-5"
+                >
+                  <img
+                    class="img-fluid rounded-circle w-25 h-25"
+                    src="./assets/images/avatar-1.jpg"
+                    alt="Avatar"
+                  />
+                  <div>
+                    <p class="fs-7">User Template</p>
+                    <p class="text-secondary">user@mail.example</p>
+                  </div>
+                </div>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <i data-lucide="user" class="icon icon-sm"></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <i data-lucide="star" class="icon icon-sm"></i>
+                  Subscription
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <i data-lucide="settings" class="icon icon-sm"></i>
+                  Settings
+                </a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <i data-lucide="power" class="icon icon-sm"></i>
+                  Sign Out
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <button
             class="navbar-toggler border-primary"
             type="button"
@@ -114,7 +187,7 @@
               class="col-12 col-lg-6 d-flex flex-column justify-content-center my-4 my-lg-0"
             >
               <h1 class="fw-bold">Welcome Web Students!</h1>
-              <p class="opacity-50 fs-5 mb-4">
+              <p class="opacity-50 fs-5 mb-4 col-xl-8">
                 Hand-picked Instructor and expertly crafted courses, designed
                 for the modern students and enterpreneur.
               </p>
@@ -137,7 +210,7 @@
         <div class="bg-white shadow-md">
           <div class="container py-3">
             <div class="row">
-              <div class="col-12 col-lg-3 pb-4 pb-lg-0">
+              <div class="col-12 col-lg-4 pb-4 pb-lg-0">
                 <div class="d-flex gap-2 align-items-center">
                   <div class="rounded-circle p-2 hero-icon-wrapper">
                     <span class="icon">
@@ -152,7 +225,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-3 pb-4 pb-lg-0">
+              <div class="col-12 col-lg-4 pb-4 pb-lg-0">
                 <div class="d-flex gap-2 align-items-center">
                   <div class="rounded-circle p-2 hero-icon-wrapper">
                     <span class="icon">
@@ -167,7 +240,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-3 pb-4 pb-lg-0">
+              <div class="col-12 col-lg-4 pb-4 pb-lg-0">
                 <div class="d-flex gap-2 align-items-center">
                   <div class="rounded-circle p-2 hero-icon-wrapper">
                     <span class="icon">

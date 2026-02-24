@@ -3,6 +3,7 @@
   --bs-primary-rgb: 117, 80, 254;
   --bs-light-rgb: 245, 244, 248;
   --bs-navbar-toggler-padding-x: 0.25rem;
+  --bs-success-rgb: 123, 199, 153;
 }
 
 .h1,
@@ -24,8 +25,16 @@ p {
   margin-bottom: 0;
 }
 
+.fs-6 {
+  font-size: 0.9rem !important;
+}
+
 .fs-7 {
   font-size: 0.8rem !important;
+}
+
+.fs-8 {
+  font-size: 0.7rem !important;
 }
 
 .navbar-toggler {
@@ -63,6 +72,14 @@ p {
 .nav-avatar {
   width: 2em;
   height: 2em;
+}
+
+.top-90 {
+  top: 90% !important;
+}
+
+.start-90 {
+  left: 90% !important;
 }
 
 .icon {
